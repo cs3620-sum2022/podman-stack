@@ -8,6 +8,8 @@ services:
       - 8080:80
     volumes:
       - ~/Downloads/tmp/src:/var/www/html
+    depends_on:
+      - cdb
 
   cdb:
     image: mysql/mysql-server:latest
