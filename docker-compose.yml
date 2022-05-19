@@ -7,7 +7,7 @@ services:
     ports:
       - 8080:80
     volumes:
-      - ~/Downloads/tmp/src:/var/www/html
+      - ./src:/var/www/html
     depends_on:
       - cdb
 
