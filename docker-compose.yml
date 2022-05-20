@@ -12,7 +12,7 @@ services:
       - cdb
 
   cdb:
-    image: mysql/mysql-server:latest
+    image: docker.io/library/mysql:latest
     container_name: cdb
     restart: always
     env_file:
